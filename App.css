@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* src/App.css */
 body {
     background-color: #f4f4f9; /* Fundo suave */
@@ -131,4 +132,139 @@ h2 {
     padding: 15px;
     border: 1px dashed #6a0080;
     border-radius: 5px;
+=======
+/* src/App.css */
+body {
+    background-color: #f4f4f9; /* Fundo suave */
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font-family: 'Georgia', serif; /* Fonte que remete a livros */
+}
+
+.App {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #03f196;
+    border: 1px solid #05fa05;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #4a148c; /* Roxo para destaque (cor clássica de capa) */
+    margin-bottom: 25px;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #6a0080;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/* --- ESTILO DO FORMULÁRIO --- */
+.livro-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.livro-input, .genero-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex-grow: 1;
+    font-size: 16px;
+}
+
+.livro-button {
+    padding: 10px 15px;
+    background-color: #4a148c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.livro-button:hover {
+    background-color: #6a1b9a;
+}
+
+/* --- ESTILO DOS ITENS DE LISTA --- */
+.livro-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #fcfcfc;
+    border: 1px solid #e0e0e0;
+    border-left: 5px solid #ccc; /* Linha sutil à esquerda */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.livro-item:hover {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.livro-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.livro-titulo {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+}
+
+.livro-genero {
+    font-size: 0.9em;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* RENDERIZAÇÃO CONDICIONAL: Livro Lido */
+.livro-item.lido {
+    background-color: #e8f5e9; /* Fundo verde claro */
+    border-left-color: #4caf50; /* Linha verde de conclusão */
+}
+
+.livro-item.lido .livro-titulo {
+    text-decoration: line-through; /* Riscado */
+    color: #777;
+}
+
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.livro-item:not(.lido) .status-badge {
+    background-color: #ffcc80; /* Laranja para "A ler" */
+    color: #b35900;
+}
+
+.livro-item.lido .status-badge {
+    background-color: #a5d6a7; /* Verde suave para "Lido" */
+    color: #1b5e20;
+}
+
+.empty-message {
+    text-align: center;
+    color: #6a0080;
+    margin-top: 30px;
+    padding: 15px;
+    border: 1px dashed #6a0080;
+    border-radius: 5px;
+>>>>>>> 36047ef0eb1a3530862551145dfa2709f4baadec
 }
